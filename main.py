@@ -6,9 +6,6 @@ from sqlite3 import *
 
 print('hello world')
 
-bot = TeleBot('6087747134:AAHAfqb26G2t6BZzHzOhaNgbmjJkou_DmQ4')
-key = '2d4cce9fc699bac5e5d7fd71d7a25273'
-
 @bot.message_handler(commands=['start'])
 def start(message):
     bot.send_message(message.chat.id, "hello user i'm glad to see you here😊")
